@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Notícias - Home </title>
+
+</head>
+
+<body>
+    <header>
+        <h1> FocusNews </h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="noticia.html">Notícias</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <form action="/buscar" method="get"> <!-- ação de buscar com o metodo pegar(method="get")-->
+            <input type="text" nome="q" placeholder="Buscar...">
+            <!-- um texto de exemplo dentro do campo quando ele está vazio. -->
+            <button type="submit">Buscar</button>
+        </form>
+        <!-- 
+        - name="q": Define Define o nome do parâmetro que 
+        será enviado para o servidor (o 'q' é um padrão comum para consultas de pesquisa).
+        -->
+    </header>
+    <br>
+    <br>
+
+
+    <main>
+        <!-- SEÇÃO HERO - Imagem de destaque -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <!-- <h1> - Manchete Principal da Nóticia mais importante -->
+                <h1>Lula sanciona isenção do Imposto de Renda para quem ganha até R$ 5 mil</h1>
+
+                <!-- Um resumo conciso e importante da noticias -->
+                <p>Contribuintes com salários entre R$ 5 mil e R$ 7.350 mensais terão descontos. Medida já começa a
+                    valer em janeiro de 2026.</p>
+
+                <!-- link para a noticia -->
+                <a href="noticia.html" class="cta-button">Leia Mais</a>
+            </div>
+        </section>
+        <br>
+        <br>
+
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h3>Categorias:</h3>
+            <ul>
+                <li><a href="/categoria/politica">Política</a></li>
+                <li><a href="/categoria/esportes">Esportes</a></li>
+                <li><a href="/categoria/economia">Economia</a></li>
+                <li><a href="/categoria/tecnologia">Tecnologia</a></li>
+                <li><a href="/categoria/saude">Saúde</a></li>
+            </ul>
+            </section>
+
+            <section class="sidebar-section top-read">
+                <h3>Mais Lidas:</h3>
+                <ol>
+                    <li><a href="/noticia/mais-lida-1">Empresa X anuncia investimento recorde em energia limpa.</a></li>
+                    <li><a href="/noticia/mais-lida-2">Descubra os 5 melhores destinos de viagem para 2026.</a></li>
+                    <li><a href="/noticia/mais-lida-3">Análise: O impacto da inteligência artificial no mercado de
+                            trabalho.</a></li>
+                    <li><a href="/noticia/mais-lida-4">Previsão: O que esperar do próximo trimestre na bolsa de
+                            valores.</a></li>
+                </ol>
+            </section>
+        </aside>
+
+
+        <!-- GRID DE NOTÍCIA -->
+        <h2> Principais Notícias: </h2>
+
+        <!-- Notícia 1 -->
+        <div class="container">
+            <div class="box">
+                <img src="/imagens/foto do homem-aranha.jpg" alt="Morte do primerio ator que interpretou o Spider-Man."
+                    width="400" height="250" class=" model">
+                <div class=" details">
+                    <a href="HomemAranha.html">
+                        <p>Morre Danny Seagren, primeiro ator a interpretar o Homem-Aranha, aos 81 anos.</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Notícia 2 -->
+            <div class="box">
+                <img src="/imagens/noticia2.jpg" alt="Lula sanciona isenção do Imposto de Renda." width="400" height="250" class=" model">
+                <div class=" details">
+                    <a href="noticia.html">
+                        <p>Lula sanciona isenção do Imposto de Renda para quem ganha até R$ 5 mil.</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Notícia 3 -->
+            <div class="box">
+                <img src="/imagens/noticia3.jpg" alt="Bolsonaro começa a comprir pena de 27 anos de prisão."
+                    width="400" height="250" class=" model">
+                <div class=" details">
+                    <a href="noticia-bolsonaro.html">
+                        <p>Bolsonaro começa a cumprir pena de 27 anos de prisão em sala da Polícia Federal.</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Notícia 4 -->
+            <div class="box">
+                <img src="/imagens/noticia4.jpg" alt="Operaçãona na Maré tem tiroteios." width="400" height="250" class="model">
+                <div class=" details">
+                    <p>Operação na Maré tem tiroteios, Linha Amarela fechada, criança baleada e sala da UFRJ atingida.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Notícia 5 -->
+            <div class="box">
+                <img src="/imagens/noticia5.jpg"
+                    alt="Anvisa assina termo de compromisso para a vacina da dengue do Butantan." width="400" height="250" class=" model">
+                <div class=" details">
+                    <p>Anvisa assina termo de compromisso para a vacina da dengue do Butantan.</p>
+                </div>
+            </div>
+
+            <!-- Notícia 6 -->
+            <div class="box">
+                <img src="/imagens/noticia6.jpg" alt="'Efeito Dino'paira sobre Messias." width="400" height="250" class=" model">
+                <div class=" details">
+                    <p>'Efeito Dino' paira sobre Messias, e cresce clima contra ele no Senado.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
