@@ -94,7 +94,7 @@
      height: 100vh;
 
      /* Adicionar uma imagem de fundo */
-     background-image: url('/imagens/imagem-secao-hero.jpg');
+     background-image: url('imagens/imagem-secao-hero.jpg');
 
      /* Garante que a imagem cubra toda a área sem distorcer */
      background-size: cover;
