@@ -1,0 +1,77 @@
+ /* 1. Define o headr como um contêiner flexível */
+ header {
+     background-color: #0099ff;
+
+     /* deixar flexivel */
+     display: flex;
+
+     /* Alinha os itens verticalmente no centro */
+     align-items: center;
+
+     /* Adciona espaço entre itens */
+     justify-content: space-between;
+
+     /* Estilização básica */
+     padding: 10px 20px;
+     border-bottom: 2px solid #ccc;
+
+     /* Limita a largura máxima, se desejar */
+     max-width: 1200px;
+     margin: 0 auto;
+
+ }
+
+
+ /* 2. Estilizado a navegação */
+ header nav ul {
+     list-style: none;
+     /* Remove os marcadores de lista */
+     padding: 0;
+     margin: 0;
+
+     /* Usa flexbox para colocar os links lado a lado */
+     display: flex;
+     gap: 20px;
+     /* Espaço entre os links Home, Noticias e Contato */
+
+ }
+
+ header nav a {
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: bold;
+     transition: color 0.3s;
+
+ }
+
+ header nav a:hover {
+     color: #a0ceff;
+     /* Cor de destaque ao passar o mouse */
+ }
+
+
+
+ /* 3. Estilizando o formulario de busca */
+
+ header form {
+     display: flex;
+     /* Alinha o input e o botão lado a lado */
+     align-items: center;
+ }
+
+ header form input[type="text"] {
+     padding: 8px;
+     border: 1px solid #ddd;
+     border-radius: 4px 0 0 4px;
+     /* Borda arredondada só na esquerda */
+ }
+
+ header form button {
+     padding: 8px 12px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 0 4px 4px 0;
+     /* Borda arredondada só na direita */
+     cursor: pointer;
+ }

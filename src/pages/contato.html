@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/layouts/estrutura.css">
+    <link rel="icon" type="logo.png" href="/src/assets/imagens/logo.png">
+    <title> FocusNews - Contato </title>
+
+</head>
+
+<body>
+    <header>
+        <h1> FocusNews </h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/src/pages/noticia.html">Notícias</a></li>
+                <li><a href="/src/pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <form action="/buscar" method="get">
+            <input type="text" nome="q" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <main class="container login-container">
+        <h2> Nos Contate! </h2>
+
+        <form id="contactForm" action="/enviar-contato" method="POST">
+
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="nome" id="nome" name="nome" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Telefone:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="5" cols="50" maxlength="500"></textarea>
+            </div>
+            <br>
+
+            <button type="submit" class="bnt-primary">Enviar Mensagem</button>
+        </form>
+
+        
+    </main>
+
+
+
+</body>
+
+</html>
